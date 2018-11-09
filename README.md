@@ -6,7 +6,7 @@
 ![npm bundle size (minified + gzip)](https://img.shields.io/bundlephobia/minzip/use-simple-undo.svg)
 ![NpmLicense](https://img.shields.io/npm/l/use-simple-undo.svg)
 
-**Use Events** - Events turned into React Hooks.
+**Use Simple Undo** - Simple solution to handle undo\redo turned into React Hooks.
 Read about [Hooks](https://reactjs.org/docs/hooks-intro.html) feature.
 
 # Documentation
