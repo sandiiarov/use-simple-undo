@@ -14,6 +14,28 @@ Read about [Hooks](https://reactjs.org/docs/hooks-intro.html) feature.
 
 https://sandiiarov.github.io/use-simple-undo
 
+# Usage
+```jsx
+const Counter = () => {
+  const [state, cursor, setValue, { undo, redo }] = useSimpleUndo(0);
+
+  const value = state[cursor];
+
+  const increment = () => setValue(value + 1);
+  const decrement = () => setValue(value - 1);
+
+  return (
+    <React.Fragment>
+      <div>{value}</div>
+      <button onClick={increment}>increment</button>
+      <button onClick={decrement}>decrement</button>
+      <button onClick={undo}>undo</button>
+      <button onClick={redo}>redo</button>
+    </React.Fragment>
+  );
+};
+```
+
 # Install
 
 > Note: React 16.7+ is required for Hooks.
