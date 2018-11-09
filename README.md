@@ -35,4 +35,4 @@ yarn add use-simple-undo
 <script src="https://unpkg.com/use-events/dist/use-simple-undo.min.js" />
 ```
 
-exposed as `UseEvents`
+exposed as `UseSimpleUndo`
