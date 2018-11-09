@@ -1,6 +1,6 @@
 {
   "name": "use-simple-undo",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "",
   "main": "dist/use-simple-undo.cjs.js",
   "module": "dist/use-simple-undo.esm.js",
