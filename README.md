@@ -10,9 +10,6 @@
 **Use Simple Undo** - Simple solution to handle undo\redo turned into React Hooks.
 Read about [Hooks](https://reactjs.org/docs/hooks-intro.html) feature.
 
-- :ok_hand: Dependency free
-- :package: Super tiny (299b)
-
 # Documentation
 
 https://sandiiarov.github.io/use-simple-undo
