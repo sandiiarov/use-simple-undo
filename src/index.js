@@ -12,7 +12,8 @@ export default initialState => {
     const nextCursor = cursor + 1;
     const nextState = insert(state, nextCursor, value);
 
-    setState(nextState, setCursor(nextCursor));
+    setState(nextState);
+    setCursor(nextCursor);
   };
 
   return [state, cursor, setValue, { undo, redo }];
