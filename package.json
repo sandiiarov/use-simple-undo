@@ -1,52 +1,30 @@
 {
   "name": "use-simple-undo",
   "version": "1.0.0",
-  "description": "",
-  "main": "dist/use-simple-undo.cjs.js",
-  "module": "dist/use-simple-undo.esm.js",
   "scripts": {
-    "build": "rollup -c",
+    "build": "pack build",
     "docz:dev": "docz dev",
     "docz:build": "docz build",
-    "docz:publish": "npm run docz:build && gh-pages -d .docz/dist"
+    "docz:publish": "yarn docz:build && gh-pages -d .docz/dist"
+  },
+  "@pika/pack": {
+    "pipeline": [
+      ["@pika/plugin-ts-standard-pkg"],
+      ["@pika/plugin-build-node"],
+      ["@pika/plugin-build-web"]
+    ]
   },
   "peerDependencies": {
-    "react": "^16.7.0-alpha.0"
+    "react": ">=16.8.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.1.2",
-    "@babel/plugin-transform-runtime": "^7.1.0",
-    "@babel/preset-env": "^7.1.0",
-    "@babel/preset-react": "^7.0.0",
-    "babel-core": "^7.0.0-bridge.0",
-    "docz": "^0.12.9",
-    "docz-core": "^0.12.9",
-    "docz-theme-default": "^0.12.9",
-    "gh-pages": "^2.0.1",
-    "react": "^16.7.0-alpha.0",
-    "react-dom": "^16.7.0-alpha.0",
-    "rollup": "^0.65.0",
-    "rollup-plugin-babel": "^4.0.1",
-    "rollup-plugin-node-resolve": "^3.3.0",
-    "rollup-plugin-peer-deps-external": "^2.2.0",
-    "rollup-plugin-replace": "^2.0.0",
-    "rollup-plugin-size-snapshot": "^0.6.1",
-    "rollup-plugin-uglify": "^4.0.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sandiiarov/use-simple-undo.git"
-  },
-  "keywords": [
-    "react",
-    "react-dom",
-    "hooks",
-    "react-hooks"
-  ],
-  "author": "Alex Sandiiarov <sandiiarov@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/sandiiarov/use-simple-undo/issues"
-  },
-  "homepage": "https://github.com/sandiiarov/use-simple-undo#readme"
+    "@pika/pack": "0.3.1",
+    "@pika/plugin-build-node": "0.3.9",
+    "@pika/plugin-build-web": "0.3.9",
+    "@pika/plugin-ts-standard-pkg": "0.3.9",
+    "@types/react": "16.8.2",
+    "docz": "0.13.7",
+    "docz-theme-default": "0.12.9",
+    "gh-pages": "2.0.1"
+  }
 }

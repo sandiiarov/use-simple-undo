@@ -2,7 +2,8 @@
 name: Usage
 ---
 
-import Example from './example';
+import { Playground } from 'docz';
+import useSimpleUndo from '../src';
 
 # Usage
 
@@ -11,10 +12,6 @@ import useSimpleUndo from 'use-simple-undo';
 ```
 
 ```jsx
-const Item = ({ value, current }) => (
-  <span style={{ fontWeight: current ? 900 : 100 }}>{value}</span>
-);
-
 const Example = () => {
   const [state, cursor, setValue, { undo, redo }] = useSimpleUndo(0);
 
@@ -24,11 +21,13 @@ const Example = () => {
   const decrement = () => setValue(value - 1);
 
   return (
-    <React.Fragment>
+    <>
       <div>value: {value}</div>
       <div>
         {state.map((v, i) => (
-          <Item key={i} value={v} current={i === cursor} />
+          <span key={i} style={{ fontWeight: i === cursor ? 900 : 100 }}>
+            {v}
+          </span>
         ))}
       </div>
       <div>cursor: {cursor}</div>
@@ -36,9 +35,33 @@ const Example = () => {
       <button onClick={decrement}>-</button>
       <button onClick={undo}>undo</button>
       <button onClick={redo}>redo</button>
-    </React.Fragment>
+    </>
   );
 };
 ```
 
-<Example />
+<Playground>
+  {() => {
+    const [state, cursor, setValue, { undo, redo }] = useSimpleUndo(0);
+    const value = state[cursor];
+    const increment = () => setValue(value + 1);
+    const decrement = () => setValue(value - 1);
+    return (
+      <>
+        <div>value: {value}</div>
+        <div>
+          {state.map((v, i) => (
+            <span key={i} style={{ fontWeight: i === cursor ? 900 : 100 }}>
+              {v}
+            </span>
+          ))}
+        </div>
+        <div>cursor: {cursor}</div>
+        <button onClick={increment}>+</button>
+        <button onClick={decrement}>-</button>
+        <button onClick={undo}>undo</button>
+        <button onClick={redo}>redo</button>
+      </>
+    );
+  }}
+</Playground>

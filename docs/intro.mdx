@@ -1,6 +1,7 @@
 ---
 name: Introduction
 route: /
+order: 1
 ---
 
 # Introduction
@@ -10,7 +11,7 @@ Read about [Hooks](https://reactjs.org/docs/hooks-intro.html) feature.
 
 ## Install
 
-> Note: React 16.7+ is required for Hooks.
+> Note: React 16.8+ is required for Hooks.
 
 ### With npm
 
@@ -23,14 +24,6 @@ npm i use-simple-undo
 ```sh
 yarn add use-simple-undo
 ```
-
-### UMD
-
-```js
-<script src="https://unpkg.com/use-events/dist/use-simple-undo.min.js" />;
-```
-
-exposed as `UseSimpleUndo`
 
 ## Quick Example
 
@@ -48,13 +41,13 @@ const Counter = () => {
   const decrement = () => setValue(value - 1);
 
   return (
-    <React.Fragment>
+    <>
       <div>{value}</div>
       <button onClick={increment}>increment</button>
       <button onClick={decrement}>decrement</button>
       <button onClick={undo}>undo</button>
       <button onClick={redo}>redo</button>
-    </React.Fragment>
+    </>
   );
 };
 ```

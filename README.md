@@ -16,7 +16,7 @@ https://sandiiarov.github.io/use-simple-undo
 
 # Install
 
-> Note: React 16.7+ is required for Hooks.
+> Note: React 16.8+ is required for Hooks.
 
 ### With npm
 
@@ -30,15 +30,8 @@ npm i use-simple-undo
 yarn add use-simple-undo
 ```
 
-### UMD
-
-```html
-<script src="https://unpkg.com/use-events/dist/use-simple-undo.min.js" />
-```
-
-exposed as `UseSimpleUndo`
-
 # Usage
+
 ```jsx
 import useSimpleUndo from 'use-simple-undo';
 ```
@@ -53,13 +46,13 @@ const Counter = () => {
   const decrement = () => setValue(value - 1);
 
   return (
-    <React.Fragment>
+    <>
       <div>{value}</div>
       <button onClick={increment}>increment</button>
       <button onClick={decrement}>decrement</button>
       <button onClick={undo}>undo</button>
       <button onClick={redo}>redo</button>
-    </React.Fragment>
+    </>
   );
 };
 ```
