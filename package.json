@@ -6,7 +6,9 @@
     "docz:dev": "docz dev",
     "docz:build": "docz build",
     "docz:publish": "yarn docz:build && gh-pages -d .docz/dist",
-    "test": "jest"
+    "test": "jest",
+    "tsc": "tsc",
+    "publish": "pack publish"
   },
   "babel": {
     "presets": [
