@@ -7,9 +7,10 @@ export default {
   version: pkg.version,
   propsParser: false,
   hashRouter: true,
+  typescript: true,
   themeConfig: {
     logo: {
-      src: 'https://svgshare.com/i/9Ff.svg',
+      src: 'https://bit.ly/2taDitV',
       width: 232,
     },
     colors: {
