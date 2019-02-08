@@ -3,6 +3,7 @@
     "target": "es2018",
     "module": "esnext",
     "moduleResolution": "node",
+    "noEmit": true,
     "strict": true,
     "allowSyntheticDefaultImports": true
   },
