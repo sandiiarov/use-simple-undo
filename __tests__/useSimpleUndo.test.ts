@@ -31,9 +31,9 @@ test('undo works properly', () => {
   act(() => setValue(1));
   act(() => setValue(2));
   expect(state[сursor]).toEqual(2);
-  act(() => undo());
+  act(undo);
   expect(state[сursor]).toEqual(1);
-  act(() => undo());
+  act(undo);
   expect(state[сursor]).toEqual(0);
 });
 
@@ -47,11 +47,11 @@ test('redo works properly', () => {
   act(() => setValue(1));
   act(() => setValue(2));
   expect(state[сursor]).toEqual(2);
-  act(() => undo());
-  act(() => undo());
+  act(undo);
+  act(undo);
   expect(state[сursor]).toEqual(0);
-  act(() => redo());
+  act(redo);
   expect(state[сursor]).toEqual(1);
-  act(() => redo());
+  act(redo);
   expect(state[сursor]).toEqual(2);
 });
