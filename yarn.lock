@@ -1065,16 +1065,6 @@
     rollup "^1.1.0"
     rollup-plugin-babel "^4.3.0"
 
-"@pika/plugin-build-types@0.3.9":
-  version "0.3.9"
-  resolved "https://registry.yarnpkg.com/@pika/plugin-build-types/-/plugin-build-types-0.3.9.tgz#8cf7d6ad329ba866fea3ebf7f945f6a5e056918f"
-  integrity sha512-DRlAg7cb2xKH//uXxFA5CVBCWtzbnjCh+OFkPMS/Byfnbc1n8cmoJDwI+Rmy8JF1ySbhDK/ZFlwIaj4BclyE2w==
-  dependencies:
-    "@pika/types" "^0.3.5"
-    execa "^1.0.0"
-    mkdirp "^0.5.1"
-    typescript "^3.0.0"
-
 "@pika/plugin-build-web@0.3.9":
   version "0.3.9"
   resolved "https://registry.yarnpkg.com/@pika/plugin-build-web/-/plugin-build-web-0.3.9.tgz#ab1af63dbcdbd69671acd35de13bba5f86a6a6fa"
@@ -9571,11 +9561,6 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
-
-typescript@^3.0.0:
-  version "3.3.3"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.3.3.tgz#f1657fc7daa27e1a8930758ace9ae8da31403221"
-  integrity sha512-Y21Xqe54TBVp+VDSNbuDYdGw0BpoR/Q6wo/+35M8PAU0vipahnyduJWirxxdxjsAkS7hue53x2zp8gz7F05u0A==
 
 ua-parser-js@^0.7.18:
   version "0.7.19"
