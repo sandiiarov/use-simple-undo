@@ -2,13 +2,11 @@
   "name": "use-simple-undo",
   "version": "1.0.0",
   "scripts": {
-    "build": "pack build",
     "docz:dev": "docz dev",
     "docz:build": "docz build",
     "docz:publish": "yarn docz:build && gh-pages -d .docz/dist",
     "test": "jest",
-    "tsc": "tsc --noEmit",
-    "publish": "pack publish"
+    "tsc": "tsc --noEmit"
   },
   "babel": {
     "presets": [

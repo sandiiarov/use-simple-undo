@@ -7,6 +7,7 @@ before_script:
   - yarn tsc
   - yarn test
 script:
-  - yarn build
+  - yarn run pack build
 after_success:
-  # - yarn publish
+  - if [ "$TRAVIS_BRANCH" = "master" ]; then yarn docz:publish; fi
+  - if [ "$TRAVIS_BRANCH" = "master" ]; then yarn run pack publish; fi
