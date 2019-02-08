@@ -7,7 +7,7 @@
     "docz:build": "docz build",
     "docz:publish": "yarn docz:build && gh-pages -d .docz/dist",
     "test": "jest",
-    "tsc": "tsc",
+    "tsc": "tsc --noEmit",
     "publish": "pack publish"
   },
   "babel": {
