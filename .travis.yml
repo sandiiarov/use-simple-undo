@@ -9,4 +9,4 @@ before_script:
 script:
   - yarn build
 after_success:
-  - yarn publish
+  # - yarn publish
