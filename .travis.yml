@@ -10,7 +10,7 @@ script:
   - yarn run pack build
 after_success:
   # - if [ "$TRAVIS_BRANCH" = "master" ]; then yarn run pack publish; fi
-  - if [ "$TRAVIS_BRANCH" = "master" ]; then docz:build; fi
+  - if [ "$TRAVIS_BRANCH" = "master" ]; then yarn docz:build; fi
 deploy:
   provider: pages
   skip-cleanup: true
