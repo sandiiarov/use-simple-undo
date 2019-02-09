@@ -1,6 +1,6 @@
-workflow "Test and Typechecking" {
+workflow "Test and TSC" {
   on = "push"
-  resolves = "Test"
+  resolves = ["TSC", "Test"]
 }
 
 action "Install" {
@@ -9,7 +9,7 @@ action "Install" {
   args = "install"
 }
 
-action "Typechecking" {
+action "TSC" {
   needs = "Install"
   uses = "actions/npm@master"
   runs = "yarn"
@@ -22,4 +22,3 @@ action "Test" {
   runs = "yarn"
   args = "test"
 }
-
