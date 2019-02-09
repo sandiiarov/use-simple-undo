@@ -12,11 +12,13 @@ action "Install" {
 action "TSC" {
   needs = "Install"
   uses = "actions/npm@master"
+  runs = "yarn"
   args = "tsc"
 }
 
 action "Test" {
   needs = "Install"
   uses = "actions/npm@master"
+  runs = "yarn"
   args = "test"
 }
