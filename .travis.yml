@@ -27,6 +27,7 @@ jobs:
           on:
             branch: master
     - stage: publish
+      script: yarn build
       before_deploy: cd pkg
       deploy:
         - provider: npm
