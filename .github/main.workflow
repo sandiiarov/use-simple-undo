@@ -45,9 +45,11 @@ action "Build package" {
 
 action "Publish docs" {
   needs = "Build docs"
-  uses = "actions/npm@master"
-  runs = "yarn"
-  args = "docz:publish"
+  uses = "maxheld83/ghpages@v0.1.1"
+  env = {
+    BUILD_DIR = ".docz/dist"
+  }
+  secrets = ["GITHUB_TOKEN"]
 }
 
 action "Publish package" {
