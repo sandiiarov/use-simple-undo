@@ -1,6 +1,6 @@
-workflow "TSC and Test" {
+workflow "TSC, Test, Build and Publish" {
   on = "push"
-  resolves = ["TSC", "Test"]
+  resolves = ["TSC", "Test", "Publish docs", "Publish package"]
 }
 
 action "Install" {
@@ -23,12 +23,8 @@ action "Test" {
   args = "test"
 }
 
-workflow "Publish" {
-  resolves = ["Publish docs", "Publish package"]
-  on = "push"
-}
-
 action "Master" {
+  needs = ["TSC", "Test"]
   uses = "actions/bin/filter@master"
   args = "branch master"
 }
