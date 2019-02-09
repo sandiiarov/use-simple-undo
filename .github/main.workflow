@@ -24,8 +24,8 @@ action "Test" {
 }
 
 workflow "Publish" {
-  on = "deployment"
   resolves = ["Publish docs", "Publish package"]
+  on = "push"
 }
 
 action "Master" {
