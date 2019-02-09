@@ -36,13 +36,6 @@ action "Build docs" {
   args = "docz:build"
 }
 
-action "Build package" {
-  needs = "Master"
-  uses = "actions/npm@master"
-  runs = "yarn"
-  args = "run pack build"
-}
-
 action "Publish docs" {
   needs = "Build docs"
   uses = "maxheld83/ghpages@v0.1.1"
@@ -50,6 +43,19 @@ action "Publish docs" {
     BUILD_DIR = ".docz/dist"
   }
   secrets = ["GITHUB_TOKEN"]
+}
+
+action "Tag" {
+  needs = "Master"
+  uses = "actions/bin/filter@master"
+  args = "tag v*"
+}
+
+action "Build package" {
+  needs = "Tag"
+  uses = "actions/npm@master"
+  runs = "yarn"
+  args = "run pack build"
 }
 
 action "Publish package" {
