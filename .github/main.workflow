@@ -1,13 +1,21 @@
-workflow "New workflow" {
+workflow "Test and Typechecking" {
   on = "push"
-  resolves = ["GitHub Action for npm"]
+  resolves = ["GitHub Actions for Yarn"]
 }
 
-action "GitHub Action for npm" {
-  uses = "actions/npm@3c8332795d5443adc712d30fa147db61fd520b5a"
-  runs = "tsc"
+action "Install" {
+  uses = "borales/actions-yarn@master"
+  args = "install"
 }
 
-workflow "New workflow 1" {
-  on = "push"
+action "Install" {
+  needs = "Build"
+  uses = "borales/actions-yarn@master"
+  args = "test"
+}
+
+action "Install" {
+  needs = "Build"
+  uses = "borales/actions-yarn@master"
+  args = "tsc"
 }
