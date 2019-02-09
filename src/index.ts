@@ -10,7 +10,7 @@ const useSimpleUndo = <T>(
   initialState: T
 ): [
   T[],
-  string,
+  number,
   (value: T) => void,
   { undo: () => void; redo: () => void }
 ] => {
