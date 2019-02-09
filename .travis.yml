@@ -23,6 +23,5 @@ deploy:
     skip-cleanup: true
     email: $NPM_EMAIL
     api_key: $NPM_TOKEN
-    tag: latest
     on:
     branch: master

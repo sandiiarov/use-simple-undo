@@ -1,6 +1,6 @@
 {
   "name": "use-simple-undo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "docz:dev": "docz dev",
     "docz:build": "docz build",
