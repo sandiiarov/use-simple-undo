@@ -1,10 +1,5 @@
 import React from 'react';
-
-const insert = <T>(arr: T[], cursor: number, value: T) => [
-  ...arr.slice(0, cursor),
-  value,
-  ...arr.slice(cursor + 1),
-];
+import insert from './insert';
 
 const useSimpleUndo = <T>(
   initialState: T
