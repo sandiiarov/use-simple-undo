@@ -1,6 +1,7 @@
 {
   "name": "use-simple-undo",
   "version": "1.0.2",
+  "license": "MIT",
   "scripts": {
     "docz:dev": "docz dev",
     "docz:build": "docz build",
