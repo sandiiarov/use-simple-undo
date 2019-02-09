@@ -1,21 +1,25 @@
 workflow "Test and Typechecking" {
   on = "push"
-  resolves = ["GitHub Actions for Yarn"]
+  resolves = "Test"
 }
 
 action "Install" {
-  uses = "borales/actions-yarn@master"
+  uses = "actions/npm@master"
+  runs = "yarn"
   args = "install"
 }
 
-action "Install" {
-  needs = "Build"
-  uses = "borales/actions-yarn@master"
+action "Typechecking" {
+  needs = "Install"
+  uses = "actions/npm@master"
+  runs = "yarn"
+  args = "tsc"
+}
+
+action "Test" {
+  needs = "Install"
+  uses = "actions/npm@master"
+  runs = "yarn"
   args = "test"
 }
 
-action "Install" {
-  needs = "Build"
-  uses = "borales/actions-yarn@master"
-  args = "tsc"
-}
