@@ -9,13 +9,20 @@ before_script:
 script:
   - yarn run pack build
 after_success:
-  # - if [ "$TRAVIS_BRANCH" = "master" ]; then yarn run pack publish; fi
   - if [ "$TRAVIS_BRANCH" = "master" ]; then yarn docz:build; fi
 deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN
-  keep-history: true
-  local-dir: .docz/dist
-  on:
+  - provider: pages
+    skip-cleanup: true
+    github-token: $GITHUB_TOKEN
+    keep-history: true
+    local-dir: .docz/dist
+    on:
+      branch: master
+
+  - provider: npm
+    skip-cleanup: true
+    email: $NPM_EMAIL
+    api_key: $NPM_TOKEN
+    tag: latest
+    on:
     branch: master
