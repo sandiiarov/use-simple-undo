@@ -1055,10 +1055,10 @@
     strip-bom "^3.0.0"
     validate-npm-package-license "^3.0.4"
 
-"@pika/plugin-build-node@0.3.9":
-  version "0.3.9"
-  resolved "https://registry.npmjs.org/@pika/plugin-build-node/-/plugin-build-node-0.3.9.tgz#d50111f984bf84968897ca73699cc67c37e5088a"
-  integrity sha512-EBGt29mFfT0LY5MbGs1IKCaUiNXjV7QCi7439ZxvVm0pPRDT70q6dZYCsBFu1sqkOUqlA+LHPZFKKyiaNEl/WQ==
+"@pika/plugin-build-node@0.3.10":
+  version "0.3.10"
+  resolved "https://registry.yarnpkg.com/@pika/plugin-build-node/-/plugin-build-node-0.3.10.tgz#a2f066e0dcfe57e4fa78e06d1d1e7b62a9181c2f"
+  integrity sha512-07Lqvm3NQAfmQsLNwxe0nI6ESdTAeOOfgEGRcgalmnsqqR7/+NgYHJOcErWwV/hn255/z+WXL2Sje+srerzxZA==
   dependencies:
     "@babel/core" "^7.0.0"
     "@babel/plugin-syntax-dynamic-import" "^7.2.0"
@@ -1103,8 +1103,8 @@
     standard-pkg "^0.4.0"
 
 "@pika/types@^0.3.3", "@pika/types@^0.3.5":
-  version "0.3.1"
-  resolved "https://registry.npmjs.org/@pika/types/-/types-0.3.7.tgz#4356dcfdc115c5371bc0b96a31d12e4e506ceb53"
+  version "0.3.8"
+  resolved "https://registry.yarnpkg.com/@pika/types/-/types-0.3.8.tgz#4356dcfdc115c5371bc0b96a31d12e4e506ceb53"
   integrity sha512-hzc0IHPvz4sdlaXP4Gzu9x1WF6CUTxyXbiYDLzxJQP9kvp8w4raeL0TB9YVFyayy6bplTaakTIoNrayy0ApBbw==
 
 "@sheerun/mutationobserver-shim@^0.3.2":
