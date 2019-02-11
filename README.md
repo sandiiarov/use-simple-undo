@@ -2,7 +2,6 @@
   <img src="https://svgshare.com/i/9Ff.svg" alt="Use Events" />
 </h1>
 
-![Build Status](https://travis-ci.org/sandiiarov/use-simple-undo.svg?branch=master)
 ![npm](https://img.shields.io/npm/dt/use-simple-undo.svg)
 ![npm](https://img.shields.io/npm/v/use-simple-undo.svg)
 ![npm bundle size (minified + gzip)](https://img.shields.io/bundlephobia/minzip/use-simple-undo.svg)
