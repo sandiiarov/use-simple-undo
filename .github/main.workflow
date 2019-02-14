@@ -48,7 +48,7 @@ action "Publish docs" {
 action "Tag" {
   needs = "Master"
   uses = "actions/bin/filter@master"
-  args = "tag v*"
+  args = "tag"
 }
 
 action "Build package" {
