@@ -4,7 +4,6 @@
 
 ![npm](https://img.shields.io/npm/dt/use-simple-undo.svg)
 ![npm](https://img.shields.io/npm/v/use-simple-undo.svg)
-![npm bundle size (minified + gzip)](https://img.shields.io/bundlephobia/minzip/use-simple-undo.svg)
 ![NpmLicense](https://img.shields.io/npm/l/use-simple-undo.svg)
 
 **Use Simple Undo** - Simple solution to handle undo\redo turned into React Hooks.
