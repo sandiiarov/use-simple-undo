@@ -41,6 +41,6 @@
     "react": "16.8.2",
     "react-dom": "16.8.2",
     "react-testing-library": "5.9.0",
-    "typescript": "3.3.3"
+    "typescript": "3.3.3333"
   }
 }
