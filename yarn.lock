@@ -1156,9 +1156,9 @@
     standard-pkg "^0.4.0"
 
 "@pika/types@^0.3.3", "@pika/types@^0.3.5":
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/@pika/types/-/types-0.3.8.tgz#4356dcfdc115c5371bc0b96a31d12e4e506ceb53"
-  integrity sha512-hzc0IHPvz4sdlaXP4Gzu9x1WF6CUTxyXbiYDLzxJQP9kvp8w4raeL0TB9YVFyayy6bplTaakTIoNrayy0ApBbw==
+  version "0.3.10"
+  resolved "https://registry.yarnpkg.com/@pika/types/-/types-0.3.10.tgz#fa00a3d62ff14b86d72e8d200a9b0dd65f107fb1"
+  integrity sha512-oQBags8sYCTUSK9YiIvZGnf5jsu8SGnEiHDSMBMyd3vuYpg2BBbQPrtU4NAC6y+A/NkKaZ0ARHvS0esBnetx+A==
 
 "@sheerun/mutationobserver-shim@^0.3.2":
   version "0.3.2"
@@ -8908,10 +8908,10 @@ react-feather@^1.1.4:
   resolved "https://registry.npmjs.org/react-feather/-/react-feather-1.1.6.tgz#2a547e3d5cd5e383d3da0128d593cbdb3c1b32f7"
   integrity sha512-iCofWhTjX+vQwvDmg7o6vg0XrUg1c41yBDZG+l83nz1FiCsleJoUgd3O+kHpOeWMXuPrRIFfCixvcqyOLGOgIg==
 
-react-hooks-testing-library@0.3.3:
-  version "0.3.3"
-  resolved "https://registry.npmjs.org/react-hooks-testing-library/-/react-hooks-testing-library-0.3.3.tgz#0b3f536d454bb5f1d15a1bb8e16b6e8e0ea82936"
-  integrity sha512-c05In8nozyMrnZsn0bt0SbFpwaXSFo3iwo2fgQkW5jl56PbPdpmcM5seSIx9ElnsPLp6aEqvqiLVxQsUe8IcfA==
+react-hooks-testing-library@0.3.4:
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/react-hooks-testing-library/-/react-hooks-testing-library-0.3.4.tgz#b7408f966c6b3fbdc7e975ff655786069e8b972e"
+  integrity sha512-A4dhnedN7DtWWiRyOG/C3Sg9aN+rScKN6DWsFIUCA2Z5m23lC5xQ4X5NKSTt3wlXcmfvXUMQoEVLwKckI4jd7Q==
   dependencies:
     react-testing-library "^6.0.0"
 
