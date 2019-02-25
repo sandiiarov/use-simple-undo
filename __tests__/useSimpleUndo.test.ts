@@ -1,4 +1,4 @@
-import { act, cleanup, testHook } from 'react-testing-library';
+import { act, cleanup, renderHook } from 'react-hooks-testing-library';
 import useSimpleUndo from '../src';
 
 afterEach(cleanup);
@@ -6,7 +6,7 @@ afterEach(cleanup);
 test('state filled properly', () => {
   let state, setValue;
 
-  testHook(() => ([state, , setValue] = useSimpleUndo(0)));
+  renderHook(() => ([state, , setValue] = useSimpleUndo(0)));
 
   expect(state).toEqual([0]);
   act(() => setValue(1));
@@ -16,7 +16,7 @@ test('state filled properly', () => {
 test('cursor point properly', () => {
   let state, сursor, setValue;
 
-  testHook(() => ([state, сursor, setValue] = useSimpleUndo('foo')));
+  renderHook(() => ([state, сursor, setValue] = useSimpleUndo('foo')));
 
   expect(state[сursor]).toEqual('foo');
   act(() => setValue('baz'));
@@ -26,7 +26,7 @@ test('cursor point properly', () => {
 test('undo works properly', () => {
   let state, сursor, setValue, undo;
 
-  testHook(() => ([state, сursor, setValue, { undo }] = useSimpleUndo(0)));
+  renderHook(() => ([state, сursor, setValue, { undo }] = useSimpleUndo(0)));
 
   act(() => setValue(1));
   act(() => setValue(2));
@@ -40,7 +40,7 @@ test('undo works properly', () => {
 test('redo works properly', () => {
   let state, сursor, setValue, undo, redo;
 
-  testHook(
+  renderHook(
     () => ([state, сursor, setValue, { undo, redo }] = useSimpleUndo(0))
   );
 
