@@ -1156,9 +1156,9 @@
     standard-pkg "^0.4.0"
 
 "@pika/types@^0.3.3", "@pika/types@^0.3.5":
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/@pika/types/-/types-0.3.8.tgz#4356dcfdc115c5371bc0b96a31d12e4e506ceb53"
-  integrity sha512-hzc0IHPvz4sdlaXP4Gzu9x1WF6CUTxyXbiYDLzxJQP9kvp8w4raeL0TB9YVFyayy6bplTaakTIoNrayy0ApBbw==
+  version "0.3.10"
+  resolved "https://registry.yarnpkg.com/@pika/types/-/types-0.3.10.tgz#fa00a3d62ff14b86d72e8d200a9b0dd65f107fb1"
+  integrity sha512-oQBags8sYCTUSK9YiIvZGnf5jsu8SGnEiHDSMBMyd3vuYpg2BBbQPrtU4NAC6y+A/NkKaZ0ARHvS0esBnetx+A==
 
 "@sheerun/mutationobserver-shim@^0.3.2":
   version "0.3.2"
@@ -1338,10 +1338,10 @@
   resolved "https://registry.npmjs.org/@types/q/-/q-1.5.1.tgz#48fd98c1561fe718b61733daed46ff115b496e18"
   integrity sha512-eqz8c/0kwNi/OEHQfvIuJVLTst3in0e7uTKeuY+WL/zfKn0xVujOTp42bS/vUUokhK5P2BppLd9JXMOMHcgbjA==
 
-"@types/react@16.8.4":
-  version "16.8.4"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.8.4.tgz#134307f5266e866d5e7c25e47f31f9abd5b2ea34"
-  integrity sha512-Mpz1NNMJvrjf0GcDqiK8+YeOydXfD8Mgag3UtqQ5lXYTsMnOiHcKmO48LiSWMb1rSHB9MV/jlgyNzeAVxWMZRQ==
+"@types/react@16.8.5":
+  version "16.8.5"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.8.5.tgz#03b9a6597bc20f6eaaed43f377a160f7e41c2b90"
+  integrity sha512-8LRySaaSJVLNZb2dbOGvGmzn88cbAfrgDpuWy+6lLgQ0OJFgHHvyuaCX4/7ikqJlpmCPf4uazJAZcfTQRdJqdQ==
   dependencies:
     "@types/prop-types" "*"
     csstype "^2.2.0"
