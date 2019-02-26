@@ -49,7 +49,7 @@
     "@pika/plugin-build-types": "0.3.12",
     "@pika/plugin-build-web": "0.3.12",
     "@pika/plugin-standard-pkg": "0.3.12",
-    "@types/jest": "24.0.6",
+    "@types/jest": "24.0.8",
     "@types/react": "16.8.5",
     "docz": "0.13.7",
     "docz-theme-default": "0.12.9",
