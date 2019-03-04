@@ -1299,10 +1299,10 @@
     rollup "^1.1.0"
     rollup-plugin-babel "^4.3.0"
 
-"@pika/plugin-standard-pkg@0.3.12":
-  version "0.3.12"
-  resolved "https://registry.npmjs.org/@pika/plugin-standard-pkg/-/plugin-standard-pkg-0.3.12.tgz#40dff6ce83a6bcbf0892956d15411746992d4b2d"
-  integrity sha512-QAV8onVIddqShfkJSMhwCFShe3AOZ2dPpDJlq0Hg62D/u6E4gSydrvOqXYH0ucfxGCLC+z3ur6kfpdlZgO530g==
+"@pika/plugin-standard-pkg@0.3.13":
+  version "0.3.13"
+  resolved "https://registry.yarnpkg.com/@pika/plugin-standard-pkg/-/plugin-standard-pkg-0.3.13.tgz#dfcd0547387b5bd407e2652170b4d551383f13c2"
+  integrity sha512-Jbs9iL18GxGszuctl33ebV5naCcCk9vhUtkQC7xKSEqSE3LlRrN6Ng/BDswcwJmzZvD+rmmJP1ViRy0NY2SP/Q==
   dependencies:
     "@pika/types" "^0.3.5"
     "@types/node" "^10.12.18"
