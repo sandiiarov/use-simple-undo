@@ -60,7 +60,7 @@
     "jest": "24.5.0",
     "react": "16.8.4",
     "react-dom": "16.8.4",
-    "react-hooks-testing-library": "0.3.6",
+    "react-hooks-testing-library": "0.3.7",
     "typescript": "3.3.3333"
   }
 }
