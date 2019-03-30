@@ -9,11 +9,11 @@
 **Use Simple Undo** - Simple solution to handle undo\redo turned into React Hooks.
 Read about [Hooks](https://reactjs.org/docs/hooks-intro.html) feature.
 
-# Documentation
+## Documentation
 
 https://sandiiarov.github.io/use-simple-undo
 
-# Install
+## Installation
 
 > Note: React 16.8+ is required for Hooks.
 
@@ -29,7 +29,7 @@ npm i use-simple-undo
 yarn add use-simple-undo
 ```
 
-# Usage
+## Usage
 
 ```jsx
 import useSimpleUndo from 'use-simple-undo';
