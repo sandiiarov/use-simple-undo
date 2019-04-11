@@ -1556,41 +1556,7 @@
   resolved "https://registry.npmjs.org/@pika/babel-plugin-esm-import-rewrite/-/babel-plugin-esm-import-rewrite-0.3.12.tgz#17fb65dfed345f3ddebf72a4431c1f2abb5a477b"
   integrity sha512-3eISK8bK1RSu6isD3jgtXhWhyVzMrmxl9P0HUkz5kUvufrA7v/0QQbktEOZsiX6DuCMfPCZQpSQ1NxjUWkyD8w==
 
-"@pika/pack@0.3.7":
-  version "0.3.7"
-  resolved "https://registry.yarnpkg.com/@pika/pack/-/pack-0.3.7.tgz#fa093b4b075947c8c1d1a72e659522e70966c68e"
-  integrity sha512-YoY5eRji4ABupF0SNyeRPFaCZ1VPYTI7ytorgSnphstqup9krBFe41EtEVHXD7VQkINlXKXgJUfTS41spaL2vA==
-  dependencies:
-    "@pika/types" "^0.3.3"
-    camelcase "^4.0.0"
-    chalk "^2.1.0"
-    commander "^2.9.0"
-    detect-indent "~5.0.0"
-    execa "^1.0.0"
-    file-uri-to-path "^1.0.0"
-    github-url-from-git "^1.5.0"
-    glob "^7.1.1"
-    has-yarn "^1.0.0"
-    hosted-git-info "^2.7.1"
-    import-from "^2.1.0"
-    inquirer "^3.0.1"
-    invariant "^2.2.0"
-    is-builtin-module "^2.0.0"
-    is-ci "^1.0.10"
-    is-scoped "^1.0.0"
-    issue-regex "^2.0.0"
-    loud-rejection "^1.2.0"
-    mkdirp "^0.5.1"
-    opn "^5.4.0"
-    p-timeout "^2.0.1"
-    read "^1.0.7"
-    rimraf "^2.5.0"
-    semver "^5.6.0"
-    strip-ansi "^4.0.0"
-    strip-bom "^3.0.0"
-    validate-npm-package-license "^3.0.4"
-
-"@pika/pack@^0.3.6":
+"@pika/pack@0.3.7", "@pika/pack@^0.3.6":
   version "0.3.7"
   resolved "https://registry.yarnpkg.com/@pika/pack/-/pack-0.3.7.tgz#fa093b4b075947c8c1d1a72e659522e70966c68e"
   integrity sha512-YoY5eRji4ABupF0SNyeRPFaCZ1VPYTI7ytorgSnphstqup9krBFe41EtEVHXD7VQkINlXKXgJUfTS41spaL2vA==
@@ -1650,10 +1616,10 @@
     mkdirp "^0.5.1"
     typescript "^3.0.0"
 
-"@pika/plugin-build-web@0.3.14":
-  version "0.3.14"
-  resolved "https://registry.yarnpkg.com/@pika/plugin-build-web/-/plugin-build-web-0.3.14.tgz#bfbadef32a22937519ef8ac2e76462766b4d2d47"
-  integrity sha512-KtC1WDeVWJ3272xS3G4K5Sq0VXK66y3vt72SLGaXwAT0s4BJsj2KfzFqe4UO32v/lezZuKwdAUGxE2fyC9f8oA==
+"@pika/plugin-build-web@0.3.15":
+  version "0.3.15"
+  resolved "https://registry.yarnpkg.com/@pika/plugin-build-web/-/plugin-build-web-0.3.15.tgz#e7b7ac368d66cb0e7307fb1d4abbdbac2dc1d19f"
+  integrity sha512-vKTP9xNPCOpwRY97XvoNxLEU3ZhjgNLex7E33AI6As6Ut5ILSIeQtu4PmvGxLs/movfcMijW0CXqhf+aEUywYQ==
   dependencies:
     "@babel/core" "^7.0.0"
     "@babel/plugin-syntax-dynamic-import" "^7.2.0"
