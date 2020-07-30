@@ -45,7 +45,7 @@
     "react": ">=16.8.0"
   },
   "devDependencies": {
-    "@babel/preset-env": "7.10.4",
+    "@babel/preset-env": "7.11.0",
     "@babel/preset-react": "7.10.4",
     "@babel/preset-typescript": "7.10.4",
     "@pika/pack": "0.5.0",
