@@ -56,7 +56,7 @@
     "@types/jest": "24.9.1",
     "@types/react": "16.14.21",
     "docz": "0.13.7",
-    "docz-theme-default": "0.12.9",
+    "docz-theme-default": "0.13.7",
     "jest": "24.9.0",
     "react": "16.14.0",
     "react-dom": "16.14.0",
